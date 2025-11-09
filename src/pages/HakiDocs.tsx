@@ -11,8 +11,8 @@ import {
   ChevronUp,
 } from "lucide-react";
 
-const DJANGO_URL = 'http://localhost:8000/documents/documents/';
-const WALLET_REGISTER_URL = 'http://localhost.179:8000/documents/wallet/register/';
+const DJANGO_URL = 'https://haki-backend-yy0c.onrender.com/documents/documents/';
+const WALLET_REGISTER_URL = 'https://haki-backend-yy0c.onrender.com/documents/wallet/register/';
 
 // -------------------------
 // PLACEHOLDER COMPONENTS

@@ -116,7 +116,7 @@ export const DAGData: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const API_URL = "http://localhost:5001/dag-data";
+  const API_URL = "https://constellation-server.onrender.com/dag-data";
 
   const fetchData = async () => {
     setLoading(true);

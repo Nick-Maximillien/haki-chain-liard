@@ -1,10 +1,7 @@
 import { useState, useEffect } from "react";
-// Assuming these components exist and are correctly imported in the actual environment
-// import LawyerSidebar from "../components/LawyerSidebar";
-// import TourGuide from "../components/TourGuide";
+
 import { Wand2, FileText } from "lucide-react";
 
-// Mock imports for runnable single-file component (replace with your actual imports)
 const LawyerSidebar = ({ onTourStart }: { onTourStart: () => void }) => (
   <div className="w-[280px] fixed h-full bg-gray-800 text-white p-4">
     <h3 className="text-xl font-bold mb-6">HakiDraft Menu</h3>
@@ -19,7 +16,6 @@ const TourGuide = ({ onComplete }: { onComplete: () => void }) => (
     </div>
   </div>
 );
-// --- End Mock Imports ---
 
 
 const documentCategories = [
@@ -51,8 +47,8 @@ const documentTypesByCategory: Record<string, string[]> = {
 };
 
 // Django Backend URLs
-const DJANGO_URL = "http://localhost:8000/documents/documents/";
-const WALLET_REGISTER_URL = "http://localhost:8000/documents/wallet/register/";
+const DJANGO_URL = "https://haki-backend-yy0c.onrender.com/documents/documents/";
+const WALLET_REGISTER_URL = "https://haki-backend-yy0c.onrender.com/documents/wallet/register/";
 
 export default function HakiDraft({ caseData }: { caseData?: any }) {
   const [showTour, setShowTour] = useState(false);
